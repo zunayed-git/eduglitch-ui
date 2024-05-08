@@ -1,0 +1,135 @@
+:root
+{
+    --primaryColor: #49d894;
+    --secondaryColor: #bdc3c7;
+    --gradientColor1: #43D894;
+    --gradientColor2: #1DCEE2;
+    --mutedColor: #8F95B2;
+
+}
+
+body,
+body *
+{
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.text-muted
+{
+    color: var(--mutedColor) !important;
+}
+
+.edug-select img
+{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.edug-img-icon
+{
+    display: inline-block;
+    width: 1em;
+    height: auto;
+}
+
+.edug-full-width
+{
+    width: 100%;
+}
+
+.btn-outline-secondary
+{
+    border-color: var(--secondaryColor) !important;
+}
+
+.edug-fs-7
+{
+    font-size: 0.8em;
+}
+
+.edug-middle-border
+{
+    background: url("../images/border.svg");
+    background-position: center;
+}
+
+.edug-middle-border span
+{
+    display: inline-block;
+    background-color: #fff;
+    padding: 1em;
+}
+
+.text-primary
+{
+    color: var(--primaryColor) !important;
+}
+
+#edug-sign-in a
+{
+    text-decoration: none;
+}
+
+.btn-success
+{
+    background-color: var(--primaryColor);
+    border-color: var(--primaryColor);
+}
+
+a 
+{
+    color: var(--primaryColor);
+}
+
+#edug-signin-right-pane
+{
+    min-height: 40em;
+    background: linear-gradient(-90deg, var(--gradientColor1) 0%, var(--gradientColor2) 100%);
+    position: relative;
+}
+
+#edug-signin-right-pane > div
+{
+    max-width: 30em;
+    width: 100%;
+    height: 30em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: url("../images/signin-image.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#edug-sign-in
+{
+    width: 75%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#edug-sign-in > div
+{
+    background: #fff;
+}
+
+@media only screen and (max-width: 767px)
+{
+    #edug-signin-right-pane
+    {
+        display: none;
+    }
+
+    #edug-sign-in
+    {
+        width: 100%;
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+}
