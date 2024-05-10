@@ -372,6 +372,11 @@ footer a:hover
     display: none;
 }
 
+.edug-green
+{
+    background: var(--selectedNavColor);
+}
+
 @media only screen and (max-width: 767px)
 {
     #edug-signin-right-pane
