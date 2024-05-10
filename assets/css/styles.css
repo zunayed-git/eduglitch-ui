@@ -275,6 +275,13 @@ footer a:hover
     text-decoration: underline !important;
 }
 
+.edug-language-flag
+{
+    width: 4em;
+    display: inline-block;
+    height: auto;
+}
+
 @media only screen and (max-width: 767px)
 {
     #edug-signin-right-pane
