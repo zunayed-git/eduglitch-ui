@@ -42,6 +42,11 @@ body *
     width: 100%;
 }
 
+.edug-full-width-1
+{
+    width: 80%;
+}
+
 .btn-outline-secondary
 {
     border-color: var(--secondaryColor) !important;
@@ -280,6 +285,12 @@ footer a:hover
     width: 4em;
     display: inline-block;
     height: auto;
+}
+
+.edug-score-box
+{
+    background: #f3f7fc;
+    border: 2px solid var(--primaryColor);
 }
 
 @media only screen and (max-width: 767px)
