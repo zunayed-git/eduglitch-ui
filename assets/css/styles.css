@@ -3,6 +3,7 @@
     --primaryColor: #43D894;
     --primaryColorHover: #1abc9c;
     --secondaryColor: #bdc3c7;
+    --secondaryBgColor: #dfdfdf;
     --gradientColor1: #43D894;
     --gradientColor2: #1DCEE2;
     --mutedColor: #8F95B2;
@@ -52,6 +53,11 @@ body *
 .btn-outline-secondary
 {
     border-color: var(--secondaryColor) !important;
+}
+
+.edug-bg-secondary
+{
+    background: var(--secondaryBgColor) !important;
 }
 
 .edug-fs-7
