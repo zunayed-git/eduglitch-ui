@@ -1,11 +1,15 @@
 :root
 {
-    --primaryColor: #49d894;
+    --primaryColor: #43D894;
+    --primaryColorHover: #1abc9c;
     --secondaryColor: #bdc3c7;
     --gradientColor1: #43D894;
     --gradientColor2: #1DCEE2;
     --mutedColor: #8F95B2;
-
+    --backgroundColor1: #f4fdf6;
+    --backgroundColor2: #f4fdf4;
+    --footerBackgroundColor: #eeeeee;
+    --footerBorderColor1: #e7e7e7;
 }
 
 body,
@@ -77,6 +81,19 @@ body *
     border-color: var(--primaryColor);
 }
 
+.btn-outline-success
+{
+    border: 1px solid var(--primaryColor);
+    color: var(--primaryColor);
+}
+
+.btn-outline-success:hover
+{
+    background: var(--primaryColorHover);
+    border: 1px solid var(--primaryColorHover);
+    color: #fff;
+}
+
 a 
 {
     color: var(--primaryColor);
@@ -85,7 +102,6 @@ a
 #edug-signin-right-pane
 {
     min-height: 40em;
-    background: linear-gradient(-90deg, var(--gradientColor1) 0%, var(--gradientColor2) 100%);
     position: relative;
 }
 
@@ -118,6 +134,147 @@ a
     background: #fff;
 }
 
+.btn-primary
+{
+    background: var(--primaryColor);
+    border-color: var(--primaryColor);
+}
+
+.btn-primary:hover
+{
+    background: var(--primaryColorHover) !important;
+    border-color: var(--primaryColorHover) !important;
+}
+
+#edug-main-nav > .navbar-nav
+{
+    justify-content: center;
+}
+
+.edug-logo
+{
+    display: inline-block;
+    width: 1.5em;
+    height: auto;
+}
+
+.edug-bg-white
+{
+    background-color: #fff;
+}
+
+.edug-bg1
+{
+    background-color: var(--backgroundColor1);
+    padding-top: 3em;
+}
+
+.edug-gradient1
+{
+    background: linear-gradient(-90deg, var(--gradientColor1) 0%, var(--gradientColor2) 100%);
+}
+
+.edug-gradient2
+{
+    background: linear-gradient(90deg, var(--gradientColor1) 0%, var(--gradientColor2) 100%);
+}
+
+#edug-home-main-img-1,
+#edug-home-main-img-2
+{
+    position: relative;
+    min-height: 20em;
+}
+
+#edug-home-main-img-1 > div
+{
+    background: url("../images/home-img.svg");
+}
+
+#edug-home-main-img-2 > div
+{
+    background: url("../images/home-img-2.svg");
+}
+
+#edug-home-main-img-1 > div,
+#edug-home-main-img-2 > div
+{
+    max-width: 30em;
+    width: 100%;
+    height: 20em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#edug-main-home
+{
+    padding-bottom: 15em;
+    background: url("../images/buildings.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+}
+
+.edug-flag
+{
+    width: 100%;
+    height: auto;
+}
+
+.edug-language-card
+{
+    display: block;
+    text-decoration: none !important;
+}
+
+.edug-bg-secondary
+{
+    background: #f4f7fd;
+    border: 1px solid #f1f1f1;
+}
+
+#edug-home-4
+{
+    background: var(--backgroundColor2);
+}
+
+#edug-home-5
+{
+    background: #f4f7fd !important;
+}
+
+.edug-fs-sm
+{
+    font-size: small;
+}
+
+#edug-home-navbar
+{
+    width: 100%;
+    position: fixed;
+    z-index: 101;
+}
+
+footer
+{
+    background: var(--footerBackgroundColor);
+}
+
+footer a
+{
+    color: #313131;
+}
+
+footer a:hover
+{
+    text-decoration: underline !important;
+}
+
 @media only screen and (max-width: 767px)
 {
     #edug-signin-right-pane
@@ -131,5 +288,16 @@ a
         left: 0;
         top: 50%;
         transform: translate(0, -50%);
+    }
+
+    .edug-text-center-sm
+    {
+        text-align: center !important;
+    }
+
+    #edug-home-5
+    {
+        padding-left: 0em !important;
+        padding-right: 0em !important;
     }
 }

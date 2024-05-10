@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Sign In</title>
+        <title>Eduglitch</title>
         
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,130 +21,970 @@
         <!-- Style -->
         <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
     </head>
-    <body class="bg-light">
-        <div id="edug-sign-in">
-            <div class="container rounded shadow">
-                <section class="row">
-                    <div class="col-sm-12 col-md-6 p-4">
-    
-                        <div class="row mt-3">
-                            <div class="col-sm-12 col-md-4 edug-select">
-                                <select class="form-select">
-                                    <option selected>English (US)</option>
-                                </select>
+    <body>
+        <div id="edug-home-navbar" class="edug-bg-white shadow-sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+
+                        <nav class="navbar navbar-expand-lg">
+                            <div class="container-fluid">
+                                <a class="navbar-brand" href="./index.html">
+                                    <img class="edug-logo" alt="Logo" src="./assets/images/eduglitch-logo.svg" />
+
+                                    Eduglitch
+                                </a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#edug-main-nav" aria-controls="edug-main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="edug-main-nav">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 edug-full-width">
+                                        <li class="nav-item mx-3">
+                                            <a class="nav-link" aria-current="page" href="#">To Practice</a>
+                                        </li>
+                                        <li class="nav-item mx-3">
+                                            <a class="nav-link" href="#">Extra Lesson</a>
+                                        </li>
+                                        <li class="nav-item mx-3">
+                                            <a class="nav-link" href="#">Packages</a>
+                                        </li>
+                                    </ul>
+                                    <div class="d-flex">
+                                        <button class="btn btn-outline-secondary mx-2" type="button">বাংলা</button>
+                                        <a class="btn btn-primary" href="./login.html">Login</a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-    
-                        <div class="row mt-5 mb-5">
-                            <header class="col-12">
-                                <h1 class="fw-bold fs-2">
-                                    Hi, Welcome Eduglitch!
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="edug-bg1">
+            <div id="edug-main-home" class="py-5">
+                <section class="container edug-gradient2 mb-5 rounded">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 p-5">
+                            <header>
+                                <h1 class="fw-bold fs-1">
+                                    Make School<br/>
+                                    Work Easier
                                 </h1>
                             </header>
     
-                            <div class="col-12 text-muted">
-                                Login to you account to enjoy
+                            <div class="mt-5 mb-5">
+                                <p>
+                                    Take unlimited online tutoring, take practice tests, practice your words or watch explanation videos. This way you get higher grades on your tests.
+                                </p>
                             </div>
-                        </div>
     
-                        <div class="row">
-                            <div class="col-12">
-    
-                                <button class="btn btn-outline-secondary p-2 edug-full-width">
-                                    <img class="edug-img-icon" src="./assets/images/icon-google.svg" alt="Google Logo" /> Sign in with Google
+                            <div class="mb-4">
+                                <button class="btn btn-light">
+                                    View Packages
                                 </button>
-    
                             </div>
                         </div>
     
-                        <div class="row edug-middle-border">
-                            <div class="col-12 text-center">
-                                <span class="edug-fs-7 fw-bold text-secondary">
-                                    Or Sign In with Email
-                                </span>
-                            </div>
-                        </div>
+                        <div id="edug-home-main-img-1" class="col-sm-12 col-md-6">
+                            <div>
     
-                        <!-- Email -->
-                        <div class="row mt-3">
-                            <div class="col-12">
-    
-                                <label for="emailInput" class="form-label">Email address</label>
-    
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text text-muted">
-                                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                                    </span>
-                                    <input id="emailInput" type="email" class="form-control">
-                                </div>
-    
-                            </div>
-                        </div>
-    
-                        <!-- Password -->
-                        <div class="row">
-                            <div class="col-12">
-    
-                                <label for="passwordInput" class="form-label">Password</label>
-    
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text text-muted">
-                                        <i class="fa fa-lock" aria-hidden="true"></i>
-                                    </span>
-                                    <input id="passwordInput" type="password" class="form-control">
-                                </div>
-    
-                            </div>
-                        </div>
-    
-                        <div class="row">
-                            <div class="col-sm-12 col-md-6">
-                                <!-- Remember me -->
-                                <div class="mb-3 form-check">
-                                    <input type="checkbox" class="form-check-input" id="rememberMeCheckbox">
-                                    <label class="form-check-label" for="rememberMeCheckbox">Remember me</label>
-                                </div>
-                            </div>
-    
-                            <!-- Forgot Password -->
-                            <div class="col-sm-12 col-md-6 text-end">
-                                <a href="#" class="text-primary">
-                                    Forgot your password?
-                                </a>
-                            </div>
-                        </div>
-    
-                        <!-- Login -->
-                        <div class="row">
-                            <div class="col-12">
-                                <a class="btn btn-success edug-full-width shadow-sm">
-                                    Log In
-                                </a>
-                            </div>
-                        </div>
-    
-                        <!-- Register -->
-                        <div class="row mb-5 mt-3">
-                            <div class="col-12">
-                                <span class="text-muted">Not registered yet?</span> <a href="./signup.html" class="text-decoration-underline">Create Account</a>
                             </div>
                         </div>
                     </div>
+                </section>
     
-                    <!-- Design -->
-                    <div id="edug-signin-right-pane" class="col-sm-12 col-md-6 rounded shadow">
-                        <div>
-                            
+                <section class="container">
+                    <div class="row">
+                        <div class="col-12">
+    
+                            <h2 class="text-center fw-bold">
+                                Which Language You<br/>
+                                Want to Learn?
+                            </h2>
+    
+                            <div class="mt-3 mb-3">
+                                <p class="text-center text-muted">
+                                    Discover endless learning possibilities tailored to your interests and needs.
+                                </p>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="row mt-4">
+                        <div class="col-12">
+    
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6">
+
+                                        <a class="container edug-bg-white shadow-sm rounded mx-2 my-2 p-3 edug-language-card" href="#">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <img class="edug-flag" alt="Flag: British" src="./assets/images/flag_british.svg" />
+                                                    </div>
+
+                                                    <div class="col-9">
+                                                        <h4 class="text-dark">
+                                                            English
+                                                        </h4>
+
+                                                        <p class="text-muted">
+                                                            Flashcards, quiz, Fillgaps
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="col-1">
+                                                        <div class="my-4 text-muted">
+                                                            <i data-feather="arrow-right"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+    
+                                    <div class="col-sm-12 col-md-6">
+
+                                        <a class="container edug-bg-white shadow-sm rounded mx-2 my-2 p-3 edug-language-card" href="#">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <img class="edug-flag" alt="Flag: British" src="./assets/images/flag_peru.svg" />
+                                                    </div>
+
+                                                    <div class="col-9">
+                                                        <h4 class="text-dark">
+                                                            Peru
+                                                        </h4>
+
+                                                        <p class="text-muted">
+                                                            Flashcards, quiz, Fillgaps
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="col-1">
+                                                        <div class="my-4 text-muted">
+                                                            <i data-feather="arrow-right"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                </div>
+    
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6">
+
+                                        <a class="container edug-bg-white shadow-sm rounded mx-2 my-2 p-3 edug-language-card" href="#">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <img class="edug-flag" alt="Flag: Peru" src="./assets/images/flag_1.svg" />
+                                                    </div>
+
+                                                    <div class="col-9">
+                                                        <h4 class="text-dark">
+                                                            French
+                                                        </h4>
+
+                                                        <p class="text-muted">
+                                                            Flashcards, quiz, Fillgaps
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="col-1">
+                                                        <div class="my-4 text-muted">
+                                                            <i data-feather="arrow-right"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+    
+                                    <div class="col-sm-12 col-md-6">
+
+                                        <a class="container edug-bg-white shadow-sm rounded mx-2 my-2 p-3 edug-language-card" href="#">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <img class="edug-flag" alt="Flag: British" src="./assets/images/flag_spanish.svg" />
+                                                    </div>
+
+                                                    <div class="col-9">
+                                                        <h4 class="text-dark">
+                                                            Spanish
+                                                        </h4>
+
+                                                        <p class="text-muted">
+                                                            Flashcards, quiz, Fillgaps
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="col-1">
+                                                        <div class="my-4 text-muted">
+                                                            <i data-feather="arrow-right"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+    
+                                    </div>
+                                </div>
+                            </div>
+    
                         </div>
                     </div>
                 </section>
             </div>
         </div>
 
+        <section class="edug-bg2 mb-5">
+            <div class="container">
+                <div class="row mt-3 mb-3">
+                    <div class="col-12 p-5">
+
+                        <header>
+                            <h2 class="text-center">
+                                Why Choose EduGlitch
+                            </h2>
+                        </header>
+
+                        <div>
+                            <p class="text-center text-muted">
+                                সেরা শিক্ষকদের পরিচর্যায় দেশের যেকোন প্রান্ত থেকে অব্যাহত থাকুক পড়াশুনার অগ্রযাত্রা
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="edug-bg-secondary p-4 rounded">
+                            <h5>
+                                <img src="./assets/images/icon_video.svg" alt="Video" /> Explanatory videos
+                            </h5>
+
+                            <ul class="text-muted">
+                                <li class="mt-3 mb-3">
+                                    Expertly crafted explanation videos by StudyGo teachers cover each chapter and subject of your chosen textbook.
+                                </li>
+
+                                <li class="mt-3 mb-3">
+                                    Dive into these videos for clear and calm explanations, ensuring comprehension of the course material.
+                                </li>
+
+                                <li class="mt-3 mb-3">
+                                    Benefit from personalized instruction that breaks down complex concepts into easily understandable segments.
+                                </li>
+
+                                <li class="mt-3 mb-3">
+                                    Access a comprehensive learning resource that supports your educational journey with clarity and expertise.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="edug-bg-secondary p-4 rounded mt-4 mb-4">
+                            <h5>
+                                <img src="./assets/images/icon_achievement.svg" alt="Achievement" /> Practice tests & questions
+                            </h5>
+                        </div>
+
+                        <div class="edug-bg-secondary p-4 rounded">
+                            <h5>
+                                <img src="./assets/images/icon_chat_support.svg" alt="Support" /> Chat with tutors
+                            </h5>
+                        </div>
+                    </div>
+
+                    <div id="edug-home-main-img-2" class="col-sm-12 col-md-6 p-4">
+                        <div class="mt-4">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5 mb-5">
+                    <div class="col-12 text-center">
+
+                        <button class="btn btn-primary shadow-sm">
+                            Get Started Now
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="edug-home-4" class="py-5">
+            <div class="container">
+                <header class="row">
+                    <h2 class="col-12 fw-bold text-center mb-5">
+                        What do our fans say?
+                    </h2>
+                </header>
+
+                <div class="row">
+
+                    <div class="col-sm-12 col-md-4">
+
+                        <div class="card shadow-sm mx-3 my-3">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img id="edug-user-img" alt="User" src="./assets/images/user-img.png" class="img img-thumbnail rounded-circle" />
+                                        </div>
+    
+                                        <div class="col-7">
+                                            <h5 class="fw-bold fs-5 mt-2">
+                                                Leslie Alexander
+                                            </h5>
+    
+                                            <div class="text-muted">
+                                                CEO at Creativex
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-2 text-end">
+                                            <img src="./assets/images/icon_twitter.svg" alt="Twitter Logo" class="edug-full-width mt-3" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor enim mauris sagittis, sed tempus, ut mi interdum.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="col-sm-12 col-md-4">
+
+                        <div class="card shadow-sm mx-3 my-3">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img id="edug-user-img" alt="User" src="./assets/images/user-img-2.png" class="img img-thumbnail rounded-circle" />
+                                        </div>
+    
+                                        <div class="col-7">
+                                            <h5 class="fw-bold fs-5 mt-2">
+                                                Kristin Watson
+                                            </h5>
+    
+                                            <div class="text-muted">
+                                                CEO at Creativex
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-2 text-end">
+                                            <img src="./assets/images/icon_twitter.svg" alt="Twitter Logo" class="edug-full-width mt-3" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor enim mauris sagittis, sed tempus, ut mi interdum.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+
+                        <div class="card shadow-sm mx-3 my-3">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img id="edug-user-img" alt="User" src="./assets/images/user-img-3.png" class="img img-thumbnail rounded-circle" />
+                                        </div>
+    
+                                        <div class="col-7">
+                                            <h5 class="fw-bold fs-5 mt-2">
+                                                Courtney Henry
+                                            </h5>
+    
+                                            <div class="text-muted">
+                                                CEO at Creativex
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-2 text-end">
+                                            <img src="./assets/images/icon_twitter.svg" alt="Twitter Logo" class="edug-full-width mt-3" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor enim mauris sagittis, sed tempus.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                
+                <div class="row">
+
+                    <div class="col-sm-12 col-md-4">
+
+                        <div class="card shadow-sm mx-3 my-3">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img id="edug-user-img" alt="User" src="./assets/images/user-img-4.png" class="img img-thumbnail rounded-circle" />
+                                        </div>
+    
+                                        <div class="col-7">
+                                            <h5 class="fw-bold fs-5 mt-2">
+                                                Brooklyn Simmons
+                                            </h5>
+    
+                                            <div class="text-muted">
+                                                CEO at Creativex
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-2 text-end">
+                                            <img src="./assets/images/icon_twitter.svg" alt="Twitter Logo" class="edug-full-width mt-3" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="card-text">
+                                    OMG! I cannot believe that I have got a brand new landing page after getting @Omega…
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="col-sm-12 col-md-4">
+
+                        <div class="card shadow-sm mx-3 my-3">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img id="edug-user-img" alt="User" src="./assets/images/user-img-5.png" class="img img-thumbnail rounded-circle" />
+                                        </div>
+    
+                                        <div class="col-7">
+                                            <h5 class="fw-bold fs-5 mt-2">
+                                                Dianne Russell
+                                            </h5>
+    
+                                            <div class="text-muted">
+                                                CEO at Creativex
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-2 text-end">
+                                            <img src="./assets/images/icon_twitter.svg" alt="Twitter Logo" class="edug-full-width mt-3" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="card-text">
+                                    OMG! I cannot believe that I have got a brand new landing page after getting @Omega…
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+
+                        <div class="card shadow-sm mx-3 my-3">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img id="edug-user-img" alt="User" src="./assets/images/user-img-6.png" class="img img-thumbnail rounded-circle" />
+                                        </div>
+    
+                                        <div class="col-7">
+                                            <h5 class="fw-bold fs-5 mt-2">
+                                                Arlene McCoy
+                                            </h5>
+    
+                                            <div class="text-muted">
+                                                CEO at Creativex
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-2 text-end">
+                                            <img src="./assets/images/icon_twitter.svg" alt="Twitter Logo" class="edug-full-width mt-3" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="card-text">
+                                    OMG! I cannot believe that I have got a brand new landing page after getting @Omega…
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+
+                <div class="row mt-5 mb-5">
+                    <div class="col-12 text-center">
+
+                        <button class="btn btn-primary shadow-sm">
+                            View all customer stories
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="row edug-gradient2 rounded">
+                    <div class="col-12 p-5">
+                        <div class="container">
+                            <div class="row">
+                                
+                                <div class="col-sm-12 col-md-4 text-center">
+                                    <h6 class="fw-bold fs-2">
+                                        168,582
+                                    </h6>
+
+                                    <div>
+                                        Read Summaries
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-4 text-center">
+                                    <h6 class="fw-bold fs-2">
+                                        51,896
+                                    </h6>
+
+                                    <div>
+                                        Watched Explanation Videos
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-4 text-center">
+                                    <h6 class="fw-bold fs-2">
+                                        120,095
+                                    </h6>
+
+                                    <div>
+                                        Practice Questions and Practice Tests
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="edug-home-5" class="p-5">
+            <div class="container">
+                <header class="row">
+                    <h2 class="col-12 text-center fw-bold mb-3">
+                        View our blogs
+                    </h2>
+                </header>
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        
+                        <div class="card bg-white shadow-sm m-4">
+                            <img src="./assets/images/blog-img.png" class="card-img-top" alt="...">
+
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">
+                                    Practice tests on EduGlitch
+                                </h5>
+
+                                <div class="text-muted edug-fs-sm">
+                                    <time datetime="June 21,2022">June 21,2022</time> - <i data-feather="clock"></i> 2 minutes read
+                                </div>
+
+                                <p class="card-text">
+                                    Aenean eleifend ante maecenas pulvinar
+                                </p>
+
+                                <a href="#" class="btn btn-outline-success">Read More</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        
+                        <div class="card bg-white shadow-sm m-4">
+                            <img src="./assets/images/blog-img.png" class="card-img-top" alt="...">
+
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">
+                                    Practice tests on EduGlitch
+                                </h5>
+
+                                <div class="text-muted edug-fs-sm">
+                                    <time datetime="June 21,2022">June 21,2022</time> - <i data-feather="clock"></i> 2 minutes read
+                                </div>
+
+                                <p class="card-text">
+                                    Aenean eleifend ante maecenas pulvinar
+                                </p>
+
+                                <a href="#" class="btn btn-outline-success">Read More</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        
+                        <div class="card bg-white shadow-sm m-4">
+                            <img src="./assets/images/blog-img.png" class="card-img-top" alt="...">
+
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">
+                                    Practice tests on EduGlitch
+                                </h5>
+
+                                <div class="text-muted edug-fs-sm">
+                                    <time datetime="June 21,2022">June 21,2022</time> - <i data-feather="clock"></i> 2 minutes read
+                                </div>
+
+                                <p class="card-text">
+                                    Aenean eleifend ante maecenas pulvinar
+                                </p>
+
+                                <a href="#" class="btn btn-outline-success">Read More</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        
+                        <div class="card bg-white shadow-sm m-4">
+                            <img src="./assets/images/blog-img.png" class="card-img-top" alt="...">
+
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">
+                                    Practice tests on EduGlitch
+                                </h5>
+
+                                <div class="text-muted edug-fs-sm">
+                                    <time datetime="June 21,2022">June 21,2022</time> - <i data-feather="clock"></i> 2 minutes read
+                                </div>
+
+                                <p class="card-text">
+                                    Aenean eleifend ante maecenas pulvinar
+                                </p>
+
+                                <a href="#" class="btn btn-outline-success">Read More</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        
+                        <div class="card bg-white shadow-sm m-4">
+                            <img src="./assets/images/blog-img.png" class="card-img-top" alt="...">
+
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">
+                                    Practice tests on EduGlitch
+                                </h5>
+
+                                <div class="text-muted edug-fs-sm">
+                                    <time datetime="June 21,2022">June 21,2022</time> - <i data-feather="clock"></i> 2 minutes read
+                                </div>
+
+                                <p class="card-text">
+                                    Aenean eleifend ante maecenas pulvinar
+                                </p>
+
+                                <a href="#" class="btn btn-outline-success">Read More</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        
+                        <div class="card bg-white shadow-sm m-4">
+                            <img src="./assets/images/blog-img.png" class="card-img-top" alt="...">
+
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">
+                                    Practice tests on EduGlitch
+                                </h5>
+
+                                <div class="text-muted edug-fs-sm">
+                                    <time datetime="June 21,2022">June 21,2022</time> - <i data-feather="clock"></i> 2 minutes read
+                                </div>
+
+                                <p class="card-text">
+                                    Aenean eleifend ante maecenas pulvinar
+                                </p>
+
+                                <a href="#" class="btn btn-outline-success">Read More</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="edug-home-6" class="edug-gradient2 p-5">
+
+            <div class="container">
+                <div class="row">
+                    <header class="col-12">
+                        <h2 class="text-center p-3 fw-bold">
+                            Try EduGlitch for free
+                        </h2>
+
+                        <div class="py-2">
+                            <p class="text-center">
+                                EduGlitch makes school work easier.<br/>Practice for all subjects.
+                            </p>
+                        </div>
+                    </header>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 text-center">
+                        
+                        <button class="btn btn-light">
+                            Get our 14 days free trial
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="row mt-3 edug-fs-sm">
+                    <div class="col-12 text-center">
+                        No credit card required
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="p-1">
+            <nav class="container py-5">
+                <div class="row">
+                    <div class="col-12">
+                        <a class="navbar-brand fw-bold" href="./index.html">
+                            <img class="edug-logo" alt="Logo" src="./assets/images/eduglitch-logo.svg" />
+
+                            Eduglitch
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row py-4">
+                    <div class="col-sm-12 col-md-8">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-4">
+                                <h6 class="fw-bold fs-6 text-uppercase mb-4 mt-4">
+                                    Company
+                                </h6>
+
+                                <ul class="list-unstyled">
+                                    <li class="my-2">
+                                        <a href="#" class="text-dark text-decoration-none">
+                                            About
+                                        </a>
+                                    </li>
+
+                                    <li class="my-2">
+                                        <a href="#" class="text-dark text-decoration-none">
+                                            Features
+                                        </a>
+                                    </li>
+
+                                    <li class="my-2">
+                                        <a href="#" class="text-dark text-decoration-none">
+                                            Works
+                                        </a>
+                                    </li>
+
+                                    <li class="my-2">
+                                        <a href="#" class="text-dark text-decoration-none">
+                                            Career
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm-12 col-md-4">
+                                <h6 class="fw-bold fs-6 text-uppercase mb-4 mt-4">
+                                    Help
+                                </h6>
+
+                                <ul class="list-unstyled">
+                                    <li class="my-2">
+                                        <a href="#" class="text-dark text-decoration-none">
+                                            Customer Support
+                                        </a>
+                                    </li>
+
+                                    <li class="my-2">
+                                        <a href="#" class="text-dark text-decoration-none">
+                                            Delivery Details
+                                        </a>
+                                    </li>
+
+                                    <li class="my-2">
+                                        <a href="#" class="text-dark text-decoration-none">
+                                            Terms & Conditions
+                                        </a>
+                                    </li>
+
+                                    <li class="my-2">
+                                        <a href="#" class="text-dark text-decoration-none">
+                                            Privacy Policy
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm-12 col-md-4">
+                                <h6 class="fw-bold fs-6 text-uppercase mb-4 mt-4">
+                                    Resources
+                                </h6>
+
+                                <ul class="list-unstyled">
+                                    <li class="my-2">
+                                        <a href="#" class="text-dark text-decoration-none">
+                                            Free eBooks
+                                        </a>
+                                    </li>
+
+                                    <li class="my-2">
+                                        <a href="#" class="text-dark text-decoration-none">
+                                            Development Tutorial
+                                        </a>
+                                    </li>
+
+                                    <li class="my-2">
+                                        <a href="#" class="text-dark text-decoration-none">
+                                            How to Blog
+                                        </a>
+                                    </li>
+
+                                    <li class="my-2">
+                                        <a href="#" class="text-dark text-decoration-none">
+                                            Youtube Playlist
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        <h6 class="fw-bold fs-6 text-uppercase mb-4 mt-4">
+                            Subscribe to newsletter
+                        </h6>
+
+                        <form class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Enter email address" aria-label="Enter email address" aria-describedby="footer-search-button">
+                            <button class="btn btn-primary" type="submit" id="footer-search-button">Join</button>
+                        </form>
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6">
+                                    <h6 class="fw-bold fs-6 text-uppercase mt-4">
+                                        Call Us
+                                    </h6>
+
+                                    <div class="fw-bold">
+                                        <a href="tel:(+1) 456-4933" class="fw-bold text-decoration-none fs-5">
+                                            (+1) 456-4933
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 mt-4">
+                                    <h6 class="fw-bold fs-6 text-uppercase">
+                                        Email Us
+                                    </h6>
+
+                                    <div class="fw-bold fs-4">
+                                        <a href="mailto:mail@example.com" class="fw-bold text-decoration-none">
+                                            mail@example.com
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container border-top">
+                <div class="row mt-3">
+                    <div class="col-sm-12 col-md-6 edug-fs-sm edug-text-center-sm mt-2 text-muted">
+                        © Copyright 2021, All Rights Reserved
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 mt-2">
+                        <ul class="list-unstyled text-end edug-text-center-sm">
+                            <li class="d-inline-block mx-1">
+                                <a href="#" class="text-muted">
+                                    <i data-feather="twitter"></i>
+                                </a>
+                            </li>
+
+                            <li class="d-inline-block mx-1">
+                                <a href="#" class="text-muted">
+                                    <i data-feather="facebook"></i>
+                                </a>
+                            </li>
+
+                            <li class="d-inline-block mx-1">
+                                <a href="#" class="text-muted">
+                                    <i data-feather="instagram"></i>
+                                </a>
+                            </li>
+
+                            <li class="d-inline-block mx-1">
+                                <a href="#" class="text-muted">
+                                    <i data-feather="github"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
         <!-- Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>   
         
+        <!-- Feather Icon -->
+        <script src="https://unpkg.com/feather-icons"></script>
+
         <!-- Script -->
         <script type="text/javascript" src="./assets/js/app.js"></script>
     </body>
