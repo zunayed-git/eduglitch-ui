@@ -399,7 +399,6 @@ footer a:hover
 
     #edug-side-nav
     {
-        border: none !important;
         position: relative;
     }
 
@@ -421,5 +420,10 @@ footer a:hover
     #edug-side-nav
     {
         min-height: auto;
+    }
+
+    #edug-sidebar-wrapper
+    {
+        border: none;
     }
 }
