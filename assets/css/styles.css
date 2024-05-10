@@ -287,10 +287,30 @@ footer a:hover
     height: auto;
 }
 
+.edug-block
+{
+    display: block;
+}
+
 .edug-score-box
 {
     background: #f3f7fc;
     border: 2px solid var(--primaryColor);
+}
+
+.bg-primary
+{
+    background: var(--primaryColor) !important;
+}
+
+.progress-bar
+{
+    background: var(--primaryColor) !important;
+}
+
+.edug-muted-bg
+{
+    background: var(--footerBackgroundColor);
 }
 
 @media only screen and (max-width: 767px)
