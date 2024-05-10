@@ -213,7 +213,7 @@ a
 
 #edug-main-home
 {
-    padding-bottom: 15em;
+    padding-bottom: 15em !important;
     background: url("../images/buildings.svg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -299,5 +299,10 @@ footer a:hover
     {
         padding-left: 0em !important;
         padding-right: 0em !important;
+    }
+
+    #edug-main-home
+    {
+        padding-bottom: 5em !important;
     }
 }
