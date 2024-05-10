@@ -313,6 +313,17 @@ footer a:hover
     background: var(--footerBackgroundColor);
 }
 
+.edug-inline-block
+{
+    display: inline-block;
+}
+
+.edug-test-badge-icon
+{
+    width: 2.5em;
+    height: 2.5em;
+}
+
 @media only screen and (max-width: 767px)
 {
     #edug-signin-right-pane
