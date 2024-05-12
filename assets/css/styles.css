@@ -193,7 +193,8 @@ a
 }
 
 #edug-home-main-img-1,
-#edug-home-main-img-2
+#edug-home-main-img-2,
+#edug-dashboard-img
 {
     position: relative;
     min-height: 20em;
@@ -209,8 +210,14 @@ a
     background: url("../images/home-img-2.svg");
 }
 
+#edug-dashboard-img > div
+{
+    background: url("../images/dashboard-img.svg");
+}
+
 #edug-home-main-img-1 > div,
-#edug-home-main-img-2 > div
+#edug-home-main-img-2 > div,
+#edug-dashboard-img > div
 {
     max-width: 30em;
     width: 100%;
@@ -222,6 +229,11 @@ a
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+#edug-dashboard-img
+{
+    height: 5em;
 }
 
 #edug-main-home
@@ -377,6 +389,74 @@ footer a:hover
     background: var(--selectedNavColor);
 }
 
+.edug-flag-sm
+{
+    width: 1.5em;
+    height: auto;
+    display: inline-block;
+}
+
+.fc-button
+{
+    background: none !important;
+    border: none !important;
+    color: #000 !important;
+}
+
+#calendar a 
+{
+    color: #585858 !important;
+    text-decoration: none !important;
+}
+
+.edug-dashboard-leaderboard-item-rank-1
+{
+    background: url("../images/icon_rank_1.svg");
+}
+
+.edug-dashboard-leaderboard-item-rank-2
+{
+    background: url("../images/icon_rank_2.svg");
+}
+
+.edug-dashboard-leaderboard-item-rank-3
+{
+    background: url("../images/icon_rank_3.svg");
+}
+
+.edug-dashboard-leaderboard-item
+{
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: auto;
+}
+
+#edug-dashboard-leaderboard-wrapper
+{
+    height: 24em;
+    overflow-y: auto;
+}
+
+.edug-progress-circle-complete
+{
+    background: url("../images/progress_circle.svg");
+}
+
+.edug-progress-circle-incomplete
+{
+    background: url("../images/progress_circle_1.svg");
+}
+
+.edug-progress-circle
+{
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
 @media only screen and (max-width: 767px)
 {
     #edug-signin-right-pane
@@ -435,6 +515,6 @@ footer a:hover
 
     #edug-sidebar-wrapper
     {
-        border: none;
+        border: none !important;
     }
 }
