@@ -278,11 +278,27 @@ a
     font-size: small;
 }
 
+.edug-fs-sm-2
+{
+    font-size: 0.7em;
+}
+
 #edug-home-navbar
 {
     width: 100%;
     position: fixed;
     z-index: 101;
+}
+
+.edug-rank-bg
+{
+    width: 2em;
+    height: 2em;
+    background: url("../images/rank_bg.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: inline-block;
 }
 
 footer
@@ -409,6 +425,12 @@ footer a:hover
     text-decoration: none !important;
 }
 
+.edug-course-img-long img
+{
+    width: 100%;
+    height: auto;
+}
+
 .edug-dashboard-leaderboard-item-rank-1
 {
     background: url("../images/icon_rank_1.svg");
@@ -455,6 +477,11 @@ footer a:hover
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+}
+
+.edug-progress-warning .progress-bar
+{
+    background: #f89920 !important;
 }
 
 @media only screen and (max-width: 767px)
